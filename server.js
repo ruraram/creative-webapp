@@ -27,23 +27,23 @@ const fests = [
 // make all the files in 'public' available
 //https://expres sjs.com/en/starter/static-files.html
 app.use(express.static("public"));
-app.use(express.static("page"));
+
 app.use(express.static("views"));
 // https://expressjs.com/en/starter/basic-routing.html
 app.get("/", (request, response) => {
   response.sendFile(__dirname + "/views/index.html");
 });
+app.get("/", (request, response) => {
+  response.sendFile(__dirname + "/views/lovebox.html");
+});
 
 // send the default array of o the webpage
 app.get("/fests", (request, response) => {
-  // express helps us take JS objects and send them as JSON
-  
+  // express helps us take JS objects and send them as JSON  
   response.json(fests);
 
 });
+
   
 
-// listen for requests :)
-const listener = app.listen(process.env.PORT, () => {
-  console.log("Your app is listening on port " + listener.address().port);
-});
+app.listen(3000)
