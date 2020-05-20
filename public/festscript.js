@@ -6,18 +6,19 @@ console.log("hello world :o");
 // define variables that reference elements on our page
 
 const lineup = document.getElementById("fest");
+const mapdata = document.getElementById("map");
 
 function renderImage(fest) {
   const pageposter = document.createElement("img");
   pageposter.src = fest[2];
   pageposter.type = "image";
-//insert map data from json fest[3]??
   lineup.appendChild(pageposter);
+  mapdata.outerHTML= fest[3]
+ pageposter.useMap="#"+document.getElementsByTagName("map")[0].attributes[0].value;
 }
 
 
-//render map data for image
-
+//lightbox
 
 fetch("/fests")
   .then(response => response.json()) // parse the JSON from the server

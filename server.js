@@ -20,7 +20,8 @@ const fests = [
   [
     "lovebox.html",
     "https://cdn.glitch.com/0eac1b7f-36d6-47d9-9e09-471cbcc4ebc9%2FLOVEBOX2020.png?v=1589236146081",
-    "https://cdn.glitch.com/0eac1b7f-36d6-47d9-9e09-471cbcc4ebc9%2Floveboxlineup.png?v=1589289393437"
+    "https://cdn.glitch.com/0eac1b7f-36d6-47d9-9e09-471cbcc4ebc9%2Floveboxlineup.png?v=1589289393437",
+    `<map name="lovebox-map"> <area alt="tyler the creator" title="tyler the creator " href="index.html" coords="62,268,1020,387" shape="rect"> <area target="" alt="khalid " title="khalid " href="" coords="1019,510,598,388,337,480,206,446,314,508,468,596" shape="0"> <area target="" alt="Disclosure " title="Disclosure " href="" coords="597,511,60,387,360,658" shape="0"><area target="" alt="anderson paak " title="anderson paak " href="" coords="649,816,64,574,657,587,1009,687" shape="0"><area target="" alt="Charli xcx" title="Charli xcx" href="" coords="651,573,1019,694" shape="0"><area target="" alt="Fka twigs" title="Fka twigs" href="" coords="650,695,1018,815" shape="0"></map>`
   ]
 ];
 
