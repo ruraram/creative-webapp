@@ -9,7 +9,7 @@ function renderImage(fest) {
   const pageposter = document.createElement("img");
   pageposter.src = fest[2];
   pageposter.type = "image";
-  pageposter.class= "center";
+  
 
   lineup.appendChild(pageposter);
   mapdata.outerHTML= fest[3]
