@@ -1,7 +1,4 @@
-// client-side js, loaded by index.html
-// run by the browser each time the page is loaded
-
-console.log("hello world :o");
+ 
 
 // define variables that reference elements on our page
 
@@ -12,6 +9,8 @@ function renderImage(fest) {
   const pageposter = document.createElement("img");
   pageposter.src = fest[2];
   pageposter.type = "image";
+  pageposter.class= "center";
+
   lineup.appendChild(pageposter);
   mapdata.outerHTML= fest[3]
  pageposter.useMap="#"+document.getElementsByTagName("map")[0].attributes[0].value;
@@ -113,7 +112,4 @@ function createlightbox(){
             e.preventDefault()
         }, false)
     }
-}
-function onYouTubeIframeAPIReady() {
-  createlightbox()
 }
