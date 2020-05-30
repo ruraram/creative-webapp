@@ -8,11 +8,10 @@
  background-color: #f199eb !important;
   background-repeat: repeat;
 }
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.fest {
+  margin: auto;
   width: 100%;
+  padding: 10px;
 }
 
 body {
