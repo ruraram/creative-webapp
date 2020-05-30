@@ -5,7 +5,7 @@
 // but feel free to use whatever libraries or frameworks you'd like through `package.json`.
 const express = require("express");
 const app = express();
-
+var PORT = process.env.PORT || 3000;
 // our default array of dreams
 
 const fests = [
@@ -45,6 +45,6 @@ app.get("/fests", (request, response) => {
 
 });
 
-  
 
-app.listen(3000)
+
+//app.listen(3000)
