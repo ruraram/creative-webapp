@@ -1,15 +1,9 @@
-// server.js
-// where your node app starts
-
-// we've started you off with Express (https://expressjs.com/)
-// but feel free to use whatever libraries or frameworks you'd like through `package.json`.
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Our app is running on port ${ PORT }`);
 });
-// our default array of dreams
 
 const fests = [
   [
@@ -29,11 +23,9 @@ const fests = [
 ];
 
 // make all the files in 'public' available
-//https://expres sjs.com/en/starter/static-files.html
 app.use(express.static("public"));
 
 app.use(express.static("views"));
-// https://expressjs.com/en/starter/basic-routing.html
 app.get("/", (request, response) => {
   response.sendFile(__dirname + "/views/index.html");
 });
@@ -41,11 +33,10 @@ app.get("/", (request, response) => {
   response.sendFile(__dirname + "/views/lovebox.html");
 });
 
-// send the default array of o the webpage
+// send the array of to the webpage
 app.get("/fests", (request, response) => {
   // express helps us take JS objects and send them as JSON  
   response.json(fests);
-
 });
 
 
